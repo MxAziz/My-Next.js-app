@@ -5,6 +5,7 @@ const CatchAllRoute = async ({params} : {params: Promise<{slug: string[]}>}) => 
     return (
         <div>
             <h1>catch all route page</h1>
+            <p>hello world</p>
             {
                 slug.map(item => {
                     return <ul key={item}>{item}</ul>
