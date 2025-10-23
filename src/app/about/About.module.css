@@ -2,3 +2,12 @@
     font-size: 30px;
     color: #fac20b;
 }
+
+.btn_style{
+    background-color: #fac20b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
