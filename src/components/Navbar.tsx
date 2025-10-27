@@ -13,7 +13,7 @@ export default function Navbar() {
               <Link href="/products">Products</Link>
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
-              <Link href="/blog">Blog</Link>
+              <Link href="/blog/1">Blog</Link>
           </nav>
     </div>
   );

@@ -1,9 +1,10 @@
 import { IProduct } from "@/type";
 
 export default async function ProductsPage() {
-    const res = await fetch("http://localhost:5000/posts")
+
+    const res = await fetch("http://localhost:5000/posts", { cache: "no-store"})
     const posts = await res.json()
-    console.log(posts)
+
   return (
     <div>
       <h1>This is products page Component</h1>
