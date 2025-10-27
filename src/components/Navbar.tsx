@@ -10,6 +10,7 @@ export default function Navbar() {
             Next.js App
           </Link>
           <nav className="flex gap-4">
+              <Link href="/products">Products</Link>
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/blog">Blog</Link>
