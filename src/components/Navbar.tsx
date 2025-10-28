@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathName = usePathname();
-  console.log(pathName);
 
 
   return (
@@ -36,6 +35,15 @@ export default function Navbar() {
           }`}
         >
           Contact
+        </Link>
+
+        <Link
+          href="/posts"
+          className={`${
+            pathName === "/posts" ? "text-yellow-300" : "text-white"
+          }`}
+        >
+          Posts
         </Link>
         <Link
           href="/blog/1"
