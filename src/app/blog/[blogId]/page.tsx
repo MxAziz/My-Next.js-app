@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const DynamicBlogPage = async ({params}:any) => {
+  console.log(await params);
     return (
       <div className=" text-center mt-8">
         <h1>This is blog Component blogId: {params.blogId}</h1>

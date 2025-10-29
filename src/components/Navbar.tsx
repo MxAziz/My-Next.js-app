@@ -46,13 +46,21 @@ export default function Navbar() {
         </Link>
 
         <Link
-        scroll={true}
           href="/posts"
           className={`${
             pathName === "/posts" ? "text-yellow-300" : "text-white"
           }`}
         >
           Posts
+        </Link>
+        <Link
+        scroll={true}
+          href="/gallery"
+          className={`${
+            pathName === "/gallery" ? "text-yellow-300" : "text-white"
+          }`}
+        >
+          Gallery
         </Link>
         <Link
           href="/blog/1"
