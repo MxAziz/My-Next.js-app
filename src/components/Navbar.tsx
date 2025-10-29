@@ -13,6 +13,14 @@ export default function Navbar() {
       </Link>
       <nav className="flex gap-4">
         <Link
+          href="/dashboard"
+          className={`${
+            pathName === "/dashboard" ? "text-yellow-300" : "text-white"
+          }`}
+        >
+          Dashboard
+        </Link>
+        <Link
           href="/products"
           className={`${
             pathName === "/products" ? "text-yellow-300" : "text-white"
@@ -38,6 +46,7 @@ export default function Navbar() {
         </Link>
 
         <Link
+        scroll={true}
           href="/posts"
           className={`${
             pathName === "/posts" ? "text-yellow-300" : "text-white"

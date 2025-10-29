@@ -1,6 +1,13 @@
 "use client";
+
+import { useEffect } from "react";
+
 const ProductsErrorPage = ({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) => {
-  console.log(error);
+
+  useEffect(() => {
+    console.error("Error in Products Page:", error);
+  },[error])
+
   return (
     <div className="min-h-dvh flex flex-col justify-center items-center text-6xl">
       <h1 className="text-red-500">{error.message}</h1>
